@@ -1,3 +1,293 @@
-<h2>
-    The index works.
-</h2>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+        <meta name="description" content="" />
+        <meta name="author" content="The Lads" />
+        <title>Canye East - Official</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/assets/yecon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='/css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href={{ url_for('model2')}}>Get Started</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Process</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=jYC4Pxep0a4" target="_blank">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Canye Korner</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">The Official Canye East Experience</p>
+                        <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-primary" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Mission</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4">Our mission is to bring a digital version of Kanye West to those in need. We want to allow his presence to be felt to a variety of those who aspire or are not able to reach out to him. We want to show even the youngest children and oldest grandparents that Kanye West is not to be trusted. </p>
+                        <a class="btn btn-light btn-xl" href={{ url_for('model2')}}>Generate Kanye Lyrics or Tweets Here!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+      <section id="media"></section>
+        <section class="page-section" id="services">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Our Process</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Learning Journey</h3>
+                            <p class="text-muted mb-0">We first started our journey by learning the basics of python and the various tools we would need to finish our Kanye AI. We did this via a number of notebooks where we could all interact and come up with fixes to various python coding problems. After learning python and creating our models, we needed to learn CSS and HTML to create this very website. Throughout this project we continued to learn various things and overall gained experience with coding and working with websites. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Brainstorming Ideas</h3>
+                            <p class="text-muted mb-0">Our group's brainstorm branched out to many ideas as we continue to develop our expertise with python. We originally came up with the idea of creating a code review bot, but then we realized it was beyond our capabilities. So, we decided to the next best thing which was creating a Kanye West Bot. This idea underwent much trial and error, but we finalized on creating two models in which one of them would create Kanye West-inspired lyrics and tweets, and the other would be a Kanye West chat bot. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Creating/Training the AI Model</h3>
+                            <p class="text-muted mb-0"> To start, we created and trained the two different bots, one training off Kayne's tweets and one training off Kanye's lyrics. Since we are using two different models we had to train each individually. After training both, we realized we could upgrade our Kanye tweets bot from a GPT-2 to a GPT-3 model to improve its overall quality. </p>
+                    </div>
+                      </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">Challenges We Faced</h3>
+                            <p class="text-muted mb-0">Throughout this process, we have come across numerous challenges. The majority of these challenges come from training/creating/refining the models and their outputs. There were many challenges but an example is that our GPT-3 model was failing to properly respond to the prompt the user was asking. To fix this we made a change which had the model now find the most important word in the sentence and use that as the prompt. Besides the model, most of the issues came from creating our website. This includes things like a header not being centered on the page or some things just straight up not working. While numerous issues have come up throughout the project, in the end we were able to work everything out and complete our goal.  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </section>
+        <!-- Call to action-->
+        <section class="page-section bg-dark text-white">
+            <div class="container px-4 px-lg-5 text-center">
+               
+          <!-- Portfolio Grid-->
+
+    <section class="page-section" id="portfolio">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            The Team
+          </h2>
+        </div>
+
+        <div class="row">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <!-- Portfolio item 1-->
+
+              <div class="portfolio-item">
+                <a class="portfolio-link" data-bs-toggle="modal" href=
+                "#portfolioModal1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img alt="..." class="img-fluid" src=
+                "static/assets/img/portfolio/fullsize/andreiM2.png"></a>
+                <div class="portfolio-caption">
+                  <div class="portfolio-caption-heading">
+                    Andrei Magno
+                  </div>
+
+                  <div class="portfolio-caption-subheading text-muted">
+                    Hello everyone, my name is Andrei Magno and I am a high school senior from San Francisco, Calfornia. For this project, I helped with finding our datasets for our AI models and creating the website.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <!-- Portfolio item 2-->
+
+              <div class="portfolio-item">
+                <a class="portfolio-link" data-bs-toggle="modal" href=
+                "#portfolioModal2">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img alt="..." class="img-fluid" src=
+                "static/assets/img/portfolio/fullsize/ianR.png"></a>
+                <div class="portfolio-caption">
+                  <div class="portfolio-caption-heading">
+                    Ian Rodgers
+                  </div>
+
+                  <div class="portfolio-caption-subheading text-muted">
+                    Hello! my name's Ian and I am an upcoming junior from the bay area. For this project, I helped to brainstorm project ideas as well as help write many of our presentations along with this website.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <!-- Portfolio item 3-->
+
+              <div class="portfolio-item">
+                <a class="portfolio-link" data-bs-toggle="modal" href=
+                "#portfolioModal3">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img alt="..." class="img-fluid" src=
+                "static/assets/img/portfolio/fullsize/lucasS2.png"></a>
+                <div class="portfolio-caption">
+                  <div class="portfolio-caption-heading">
+                    Lucas Sage
+                  </div>
+
+                  <div class="portfolio-caption-subheading text-muted">
+                    Hello. I'm Lucas, a rising senior from Oakland, California. I helped gather information and assist others during the process of creating our Kanye AI.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+              <!-- Portfolio item 4-->
+
+              <div class="portfolio-item">
+                <a class="portfolio-link" data-bs-toggle="modal" href=
+                "#portfolioModal4">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img alt="..." class="img-fluid" src=
+                "static/assets/img/portfolio/fullsize/justinT.png"></a>
+                <div class="portfolio-caption">
+                  <div class="portfolio-caption-heading">
+                    Justin Tovar
+                  </div>
+
+                  <div class="portfolio-caption-subheading text-muted">
+                    Hello! My name is Justin Tovar and I'm beginning my senior year of highschool in Los Angeles, California. For this project, I participated in the development of presentations and this website.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+              <!-- Portfolio item 5-->
+
+              <div class="portfolio-item">
+                <a class="portfolio-link" data-bs-toggle="modal" href=
+                "#portfolioModal5">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img alt="..." class="img-fluid" src=
+                "static/assets/img/portfolio/fullsize/aliH.png"></a>
+                <div class="portfolio-caption">
+                  <div class="portfolio-caption-heading">
+                    Ali Hussain
+                  </div>
+
+                  <div class="portfolio-caption-subheading text-muted">
+                    I’m Ali, a rising senior from Columbus, Ohio, and the only person on the team outside of California. I helped find datasets and create presentations.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <!-- Portfolio item 6-->
+
+              <div class="portfolio-item">
+                <a class="portfolio-link" data-bs-toggle="modal" href=
+                "#portfolioModal6">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img alt="..." class="img-fluid" src=
+                "static/assets/img/portfolio/fullsize/casperT.png"></a>
+                <div class="portfolio-caption">
+                  <div class="portfolio-caption-heading">
+                    Casper Teeuwisse
+                  </div>
+
+                  <div class="portfolio-caption-subheading text-muted">
+                    I am beginning my junior year anywhere but Ohio. For this project, I was in charge of training both the GPT-2 and GPT-3 models and implementing them into our website.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+      </div>
+    </section>
+          </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted"></div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
